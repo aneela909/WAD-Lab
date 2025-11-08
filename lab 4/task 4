@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Text</title>
+  <body>
+  <h1><b>Rainbow Text</b></h1>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #8d8484; /* dark background for contrast */
+    }
+
+    h1 {
+      font-size: 3em;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      animation: rainbow 5s linear infinite;
+    }
+
+    @keyframes rainbow {
+      0%   { color: red; }
+      20%  { color: orange; }
+      40%  { color: green; }
+      60%  { color: blue; }
+      80%  { color: purple; }
+      100% { color: red; }
+    }
+  </style>
+  </body>
+</head>
+</html>
