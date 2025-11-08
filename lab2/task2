@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Record</title>
+<body>
+
+<h1>Student Academic Record</h1>
+<Table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <th>Student Name</th>
+      <th>Subject</th>
+      <th>Grade</th>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>Math</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Sara</td>
+      <td>Science</td>
+      <td>B+</td>
+    </tr>
+    <tr>
+      <td>Hamza</td>
+      <td>English</td>
+      <td>A-</td>
+    </tr>
+    <tr>
+      <td>Noor</td>
+      <td>Computer</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Usman</td>
+      <td>History</td>
+      <td>B</td>
+    </tr>
+</Table>
+</body>
+</html>
