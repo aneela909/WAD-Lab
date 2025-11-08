@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Riphah University </title>
+</head>
+
+<body style="text-align:center; font-family:Arial; padding:30px;">
+
+    <h2>here is my info</h2>
+
+    <p id="desc" class="basicStyle">
+  My name is aneela . sap 59512</p>
+<style>
+    .basicStyle {
+        color: blue;
+        font-size: 18px;
+        background-color: #f0f8ff;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .addedStyle {
+        color: purple;
+        font-weight: bold;
+        background-color: #ffe4ff;
+        border: 2px solid purple;
+        padding: 12px;
+        border-radius: 6px;
+    }
+</style>
+<script src="tasks.js"></script>
+</body>
+
+</html>
+
+
+let paragraph = document.getElementById("desc");
+paragraph.classList.add("addedStyle");
+paragraph.textContent =
+  "My name is Tasveeb and sap is 58968";
+
