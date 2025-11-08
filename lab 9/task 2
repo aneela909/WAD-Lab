@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tasks</title>
+</head>
+<body>
+    <p id="text">my name is aneela.</p>
+
+    <script>
+        document.getElementById("text").innerHTML = "my name is <b>Aneela</b>";
+    </script>
+</body>
+
+</html>
