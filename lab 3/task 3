@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Robotics Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Welcome to AI Robotics</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="content">
+   
+    <aside class="sidebar left">
+      <h3>Quick Links</h3>
+      <p>Explore Robotics World with AI 🚀</p>
+    </aside>
+
+    <main>
+      <h2>About AI Robotics</h2>
+      <p>
+        Artificial Intelligence and Robotics are revolutionizing the future. 
+        From self-driving cars to humanoid robots, AI enables machines to 
+        learn, adapt, and perform human-like tasks. 
+      </p>
+
+      <div class="slider">
+        <div class="slides">
+          <img src="image1.jpg" alt="Robot 1">
+          <img src="image2.jpg" alt="Robot 2">
+          <img src="image6.jpg" alt="Robot 3">
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar right">
+      <img src="image2.jpg" alt="AI Robotics Logo">
+      <img src="image1.jpg" alt="Robot Pic 1">
+      <img src="image2.jpg" alt="Robot Pic 2">
+    </aside>
+  </div>
+
+  <footer>
+    © 2025 AI Robotics - All Rights Reserved
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+       //style csss
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+header {
+  background: #333232;
+  color: rgb(175, 168, 168);
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav {
+  background: #222;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: whi+` te;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ccff;
+}
+
+.content {
+  display: flex;
+  min-height: 400px;
+}
+
+.sidebar {
+  background: #ddd;
+  padding: 20px;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.sidebar.left {
+  text-align: center;
+}
+
+.sidebar.left h3 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.sidebar.right {
+  text-align: center;
+}
+
+.sidebar.right img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.slider {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 9s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+footer {
+  background: #222;
+  color: rgb(192, 171, 171);
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
