@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us - Our Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .owner-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .owner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .card-title {
+            font-weight: bold;
+        }
+
+        .card-body {
+            flex-grow: 1;
+        }
+
+        .card-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container about-section">
+        <h2 class="text-center mb-5">Meet Our Owners</h2>
+        <div class="row g-4 justify-content-center">
+
+            <!-- Owner 1 -->
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card owner-card w-100">
+                    <img src="sarah.jpg" class="card-img-top" alt="John Smith">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="card-text">
+                            John Smith is the visionary Founder and CEO of our company, with over 15 years of experience
+                            in real estate and
+                            commercial development. Known for her strategic thinking and innovative leadership, John has
+                            overseen numerous
+                            high-profile projects across the country. Her mission is to blend architectural excellence
+                            with sustainable development
+                            practices to create spaces that truly impact lives. Outside of work, John is a passionate
+                            mentor and an advocate for
+                            youth entrepreneurship.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Owner 2 -->
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card owner-card w-100">
+                    <img src="men.jpg" class="card-img-top" alt="Emily Johnson">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Emily Johnson</h5>
+                        <p class="card-text">
+                            Emily Johnson, our Co-Founder and Head of Operations, brings a wealth of experience in
+                            business process
+                            management and client relations. Her ability to manage cross-functional teams and streamline
+                            workflows has been key
+                            to our company's growth. Emily is deeply committed to customer satisfaction and quality
+                            assurance. She’s known for her
+                            detail-oriented approach and is actively involved in several community outreach programs
+                            aimed at empowering women
+                            in business.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Owner 3 -->
+            <div class="col-md-4 col-sm-6 d-flex">
+                <div class="card owner-card w-100">
+                    <img src="ayesha.webp" class="card-img-top" alt="Michael Brown">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Michael Brown</h5>
+                        <p class="card-text">
+                            As the Chief Marketing Officer, Michael Brown leads all marketing and branding initiatives
+                            with unmatched creativity.
+                            With over a decade of experience in digital strategy, content creation, and brand
+                            positioning, Michael has played a pivotal
+                            role in expanding our market presence. Her data-driven mindset and flair for storytelling
+                            make her a valuable asset. Michael
+                            also conducts workshops on digital marketing trends and mentors young professionals breaking
+                            into the field.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
