@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Riphah University)</title>
+</head>
+<body>
+
+    <h2>welcome to riphah international university</h2>
+    <p id="info"> Hello! I’m <b>Aneela</b>, a BSCS student (SAP 59512).</p>
+    <button id="toggleBtn">hide/show</button>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            padding: 30px;
+        }
+    
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        p {
+            font-size: 18px;
+            color: #333;
+            transition: opacity 0.4s ease;
+        }
+    </style>
+
+    <script src="tasks.js"></script>
+</body>
+</html>
+
+
+
+const btn = document.getElementById("toggleBtn");
+const para = document.getElementById("info");
+let visible = true;
+
+btn.onclick = function () {
+  if (visible) {
+    para.style.display = "none";
+    btn.textContent = "Show Paragraph";
+    visible = false;
+  } else {
+    para.style.display = "block";
+    btn.textContent = "Hide Paragraph";
+    visible = true;
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
