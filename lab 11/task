@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Changer App</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to Mood Changer App </h1>
+    <input type="text" id="nameBox" placeholder="Type your name..." />
+    <p id="greeting">Hello, User!</p>
+
+    <select id="moodSelect">
+        <option value="">Select your mood--</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+        <option value="excited">Excited</option>
+        <option value="relaxed">Relaxed</option>
+    </select>
+
+    <button id="showMoodBtn">Show My Mood</button>
+
+    <div id="emoji">🙂</div>
+<script  src="task.js"></script>
+</body>
+</html>
+
+
+//css
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 60px;
+      transition: background-color 0.4s ease;
+  }
+
+  h1 {
+      color: #333;
+  }
+
+  #emoji {
+      font-size: 80px;
+      transition: transform 0.3s;
+      margin: 20px;
+  }
+
+  #emoji:hover {
+      cursor: pointer;
+  }
+
+  select,
+  input,
+  button {
+      padding: 8px 12px;
+      margin: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+  }
+
+  button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+  }
+
+  button:hover {
+      background-color: #45a049;
+  }
+
+
+//js
+
+        const nameBox = document.getElementById("nameBox");
+        const greeting = document.getElementById("greeting");
+        const moodSelect = document.getElementById("moodSelect");
+        const emoji = document.getElementById("emoji");
+        const showMoodBtn = document.getElementById("showMoodBtn");
+
+        nameBox.addEventListener("keyup", () => {
+            let name = nameBox.value.trim();
+            greeting.innerText = name ? `Hello, ${name}!` : "Hello, User!";
+        });
+
+        moodSelect.addEventListener("change", () => {
+            const mood = moodSelect.value;
+            switch (mood) {
+                case "happy": document.body.style.backgroundColor = "#ffeb3b"; break;
+                case "sad": document.body.style.backgroundColor = "#90caf9"; break;
+                case "angry": document.body.style.backgroundColor = "#ef5350"; break;
+                case "excited": document.body.style.backgroundColor = "#ffb74d"; break;
+                case "relaxed": document.body.style.backgroundColor = "#a5d6a7"; break;
+                default: document.body.style.backgroundColor = "white";
+            }
+        });
+
+        showMoodBtn.addEventListener("click", () => {
+            const mood = moodSelect.value;
+            switch (mood) {
+                case "happy": emoji.innerText = "😄"; break;
+                case "sad": emoji.innerText = "😢"; break;
+                case "angry": emoji.innerText = "😡"; break;
+                case "excited": emoji.innerText = "🤩"; break;
+                case "relaxed": emoji.innerText = "😌"; break;
+                default: emoji.innerText = "🙂";
+            }
+        });
+
+        emoji.addEventListener("mouseover", () => {
+            emoji.style.transform = "scale(1.5)";
+        });
+        emoji.addEventListener("mouseout", () => {
+            emoji.style.transform = "scale(1)";
+        });
+   
+
+
+
+
+
