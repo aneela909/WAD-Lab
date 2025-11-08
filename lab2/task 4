@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seasons</title>
+</head>
+<body>
+
+  <h1>Seasons</h1>
+
+  <h2>Spring</h2><hr>
+  <p>
+    Spring is the season of renewal and growth. Flowers bloom, trees regain their leaves, 
+    and the world becomes full of color again after the cold winter months. 
+    The air is fresh and filled with the fragrance of blossoms, and the days gradually 
+    become warmer and longer.<br>
+    Many cultures celebrate spring with festivals and traditions that highlight fertility, 
+    hope, and new beginnings. It is also a time when animals come out of hibernation 
+    and birds migrate back, filling the skies with life and sound.
+  </p>
+
+  <h2>Summer</h2><hr>
+  <p>
+    Summer is known for its hot days, bright sunshine, and long daylight hours. 
+    People often enjoy vacations, beach trips, and outdoor activities during this season. 
+    Fruits like mangoes, watermelon, and berries are abundant, making it a time of 
+    refreshing flavors.<br>
+    It is also a season of relaxation and joy, where families gather for picnics, 
+    children enjoy their school holidays, and festivals and cultural events bring 
+    people together in celebration.
+  </p>
+
+</body>
+</html>
