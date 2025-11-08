@@ -1,0 +1,10 @@
+let numbers = [2, 7, 10, 15, 20, 33];
+let evens = [];
+
+for (let num of numbers) {
+  if (num % 2 === 0) {
+    evens.push(num);
+  }
+}
+
+console.log("Even Numbers:", evens);
