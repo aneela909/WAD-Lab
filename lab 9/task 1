@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1</title>
+</head>
+<body>
+    <p class="para">Welcome to Ripa international university</p>
+    <p class="para">My name is aneela sap 59512.</p>
+
+    <script>
+        const paras = document.querySelectorAll(".para");
+        paras.forEach(p => {
+            p.style.color = "blue";
+        });
+    </script>
+</body>
+
+</html>
