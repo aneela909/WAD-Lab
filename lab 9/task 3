@@ -1,0 +1,12 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>wed</title></head>
+<body>
+    <p id="Text">hey whats up?</p>
+
+    <script>
+        document.getElementById("Text").innerText = "I am fine wby";
+    </script>
+</body>
+</html>
