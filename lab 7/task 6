@@ -1,0 +1,15 @@
+const countVowels = (str) => {
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return `The string "${str}" contains ${count} vowels.`;
+};
+
+console.log(countVowels("Hello World")); 
+console.log(countVowels("JavaScript")); 
