@@ -1,0 +1,23 @@
+
+const InstagramProfile = {
+  username: "aneelayyyy",
+  name: "Aneela>",
+  bio: " ִֶָpakher raghly ",
+  posts: 0,
+  followers: 194,
+  following: 191,
+  verified: false,
+  profilePic: "profile.jpg", 
+  highlights: ["Highlights"],
+  accountType: "Private",
+
+};
+
+console.log("Username:", InstagramProfile.username);
+console.log("Name:", InstagramProfile.name);
+console.log("Bio:", InstagramProfile.bio);
+console.log("Posts:", InstagramProfile.posts);
+console.log("Followers:", InstagramProfile.followers);
+console.log("Following:", InstagramProfile.following);
+console.log("Highlights:", InstagramProfile.highlights);
+console.log("Account Type:", InstagramProfile.accountType);
