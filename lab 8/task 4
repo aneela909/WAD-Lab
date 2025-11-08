@@ -1,0 +1,5 @@
+let studentsMarks = [45, 67, 89, 23, 56, 90];
+
+let passedStudents = studentsMarks.filter((mark) => mark > 50);
+
+console.log("Marks greater than 50:", passedStudents);
