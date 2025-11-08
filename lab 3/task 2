@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Image Slider</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1><b>WELCOME TO AI ROBOTICS</b> </h1>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="image1.jpg" alt="Slide 1">
+      <img src="image2.jpg" alt="Slide 2">
+      <img src="image1.jpg" alt="Slide 3">
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+//Style code
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slider {
+  width: 800px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slides {
+  display: flex;
+  width: 300%;  
+  animation: slide 6s infinite;
+}
+
+.slides img {
+  width: 33.3333%; 
+  height: 300px;
+  object-fit: cover; 
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
