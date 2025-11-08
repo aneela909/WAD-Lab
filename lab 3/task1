@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration for TechHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration</h1>
+    <p>Please fill in the form to create an account</p>
+    <hr><br>
+
+    <form>
+      <label for="email"><b>Email</b></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="repeat_password"><b>Repeat Password</b></label>
+      <input type="password" id="repeat_password" name="repeat_password" required>
+
+      <label>
+        <input type="checkbox" id="agree" name="agree" required>
+        By creating an account you agree to 
+        <a href="/terms" target="_blank">Terms</a> &amp; 
+        <a href="/privacy" target="_blank">Privacy</a>.
+      </label>
+
+      <button type="submit" class="btn"><b>Register</b></button>
+<
+    </form>
+
+    <p class="bottom-text">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+//loginpage
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <p>Please enter your email and password to sign in</p>
+    <hr>
+
+    <form action="#">
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+
+      <button type="submit" class="btn">Login</button>
+
+      <p class="extra-text">Don't have an account? <a href="registration.html">Register</a></p>
+    </form>
+  </div>
+</body>
+</html>
+
+
+//css code for both
+body {
+  font-family: Arial, sans-serif;
+  background: #a8b4c9;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #d2d6d8;  
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+form {
+    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.btn {
+  background-color: #007bff; 
+  color: white;              
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3; 
+}
+
+.extra-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+
+
