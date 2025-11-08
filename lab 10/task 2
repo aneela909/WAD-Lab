@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Riphah University</title></head>
+<body style="text-align:center; font-family:Arial; padding:30px;">
+    <h2>Welcome to Riphah International University</h2>
+    <p id="info">Already registered?</p>
+
+    <script src="tasks.js"></script>
+</body>
+
+</html>
+
+
+let btn = document.createElement("button");
+btn.textContent = "Log In";
+btn.style.backgroundColor = "#9888ddff";
+btn.style.color = "white";
+btn.style.padding = "10px 25px";
+btn.style.border = "none";
+btn.style.borderRadius = "8px";
+btn.style.fontSize = "16px";
+btn.style.cursor = "pointer";
+btn.style.marginTop = "10px";
+
+document.body.insertBefore(btn, document.getElementById("info"));
