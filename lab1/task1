@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_for_TechHUb </title>
+
+</head>
+<body>
+   <h1> Registration</h1>
+   <p> Please fill in the form to create an Account</p>
+   <br><hr>
+    <form>
+        <label1><b>Email</b></label1><br>
+        <input type="email" id="email"name="email" required <br>
+        <br>
+        <br>
+
+        <label2><b>password </b></label2><BR>
+        <input type="password" id="password" name="password"  required<br>
+        <br>
+        <br>
+        <label3><b> Repeat Password</b></label3><br>
+    <input id="Repeat_password" name="Repeat_password" type="password" required<br>
+<br>
+<br>
+
+    <label4>
+      <input id="agree" name="agree" type="checkbox" required /><b>
+      By Creating an account you  agree to </b><a href="/terms" target="_blank">Terms</a> &amp; <a href="/privacy" target="_blank">Privacy</a>.
+    </label4><br /><br />
+
+     <button type="submit"><b>Register</b></button>
+     <br>
+
+     <p>Already have an account? <a href="login.html">Sign in</a></p>
+
+</body>
+</html>
+
