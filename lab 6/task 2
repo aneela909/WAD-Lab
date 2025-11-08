@@ -1,0 +1,9 @@
+const Product = {
+  name: "Laptop",
+  brand: "Dell",
+  price: 75000,
+};
+
+console.log("Product Name:", Product.name);
+console.log("Product Brand:", Product.brand);
+console.log("Product Price:", Product.price);
