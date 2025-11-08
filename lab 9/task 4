@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wed</title>
+</head>
+<body>
+    <ul>
+        <li>aneela</li>
+        <li>tasveeb</li>
+        <li>roheena</li>
+        <li>iram</li>
+    </ul>
+
+    <script>
+        const items = document.querySelectorAll("li");
+        items.forEach(item => {
+            item.textContent = item.textContent.toUpperCase();
+        });
+    </script>
+</body>
+</html>
