@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Array</title></head>
+<body>
+    <script>
+        let n = parseInt(prompt("Enter how many numbers you want:"));
+        let numbers = [];
+        for (let i = 1; i <= n; i++) {
+            numbers.push(i);
+        }
+
+        console.log("New array:", numbers);
+        alert("New array: " + numbers);
+    </script>
+</body>
+
+</html>
