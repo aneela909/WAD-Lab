@@ -1,0 +1,214 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Box Grid</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="topbar">Top bar</div>
+
+        <div class="box box6">Box 6<br><span class="val">Value: 120</span></div>
+
+        <div class="box box2">Box 2<br><span class="val">12</span></div>
+        <div class="box box3">Box 3<br><span class="val">34</span></div>
+        <div class="box box4">Box 4<br><span class="val">56</span></div>
+        <div class="box box5">Box 5<br><span class="val">78</span></div>
+
+        <div class="box box1">Box 1<br><span class="val">TOTAL: 300</span></div>
+
+        <div class="box box7">Box 7<br><span class="val">Note</span></div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+/////style code
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 24px;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f6f8fb;
+    color: #1f2d3d;
+}
+
+/* outer grid */
+.wrap {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 18% 36% 36%;
+    grid-template-rows: 60px repeat(4, 1fr) 80px;
+    /* topbar, 4 rows for middle small boxes, bottom row for box7 */
+    gap: 14px;
+    align-items: stretch;
+}
+
+/* top horizontal bar spanning all columns */
+.topbar {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background: linear-gradient(90deg, #dfe9fb, #e9f0ff);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    font-weight: 600;
+    color: #234;
+}
+
+/* Box placement using grid areas by explicit coordinates */
+.box6 {
+    grid-column: 1;
+    grid-row: 2 / 5;
+}
+
+/* tall left box spanning 3 rows */
+.box2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.box3 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box4 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.box5 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.box1 {
+    grid-column: 3;
+    grid-row: 2 / 6;
+}
+
+/* tall right box spanning rows 2-5 */
+.box7 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+/* bottom-left wide box */
+
+/* common box look */
+.box {
+    background: linear-gradient(180deg, rgba(48, 93, 200, 0.08), rgba(48, 93, 200, 0.04));
+    border-radius: 8px;
+    border: 6px solid rgba(250, 250, 240, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    color: #123;
+    padding: 12px;
+    min-height: 60px;
+}
+
+/* visual tweaks for big Box1 to look prominent */
+.box1 {
+    background: linear-gradient(180deg, #e6eefc, #d6e4fb);
+    font-size: 1.05rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* smaller boxes style */
+.box2,
+.box3,
+.box4,
+.box5 {
+    background: linear-gradient(180deg, #f2f6ff, #eef4ff);
+}
+
+/* bottom left box7 style */
+.box7 {
+    background: linear-gradient(180deg, #f5f7fb, #eef2ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* value text */
+.val {
+    display: block;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #0f2a55;
+}
+
+/* responsive adjustments */
+@media (max-width:760px) {
+    .wrap {
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(7, auto);
+    }
+
+    .topbar {
+        grid-column: 1;
+    }
+
+    .box6 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .box2 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .box3 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .box4 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .box5 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .box1 {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .box7 {
+        grid-column: 1;
+        grid-row: 8;
+    }
+}
