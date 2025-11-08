@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Riphah University </title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #bulb {
+            width: 120px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        #bulb:hover {
+            transform: scale(1.1);
+        }
+
+        #status {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Bulb </h2>
+    <p> Click the bulb below to turn it ON or OFF.</p>
+
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb">
+
+    <p id="status">The bulb is currently OFF.</p>
+    <script src="tasks.js"></script>
+
+</body>
+
+</html>
+
+let bulb = document.getElementById("bulb");
+let status = document.getElementById("status");
+
+bulb.onclick = function () {
+  if (bulb.src.includes("bulboff")) {
+    bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    status.textContent = "Aneela just turned the bulb ON ";
+    status.style.color = "green";
+  } else {
+    bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    status.textContent = "Aneela just turned the bulb OFF ";
+    status.style.color = "red";
+  }
+};
