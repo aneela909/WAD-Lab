@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Riphah University - Task 1</title></head>
+
+<body style="text-align:center; font-family:Arial; padding:30px;">
+
+    <h2>Welcome to Riphah International University</h2>
+    <p id="studentPara" class="oldClass"> hi there </p>
+    <script src="tasks.js"></script>
+</body>
+</html>
+
+
+let para = document.getElementById("studentPara");
+
+let oldClass = para.getAttribute("class");
+console.log("Old class name:", oldClass);
+para.setAttribute("class", "newClass");
+para.textContent =
+  " hello!";
